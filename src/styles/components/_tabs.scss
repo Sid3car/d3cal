@@ -1,0 +1,49 @@
+@import "compass/utilities/general/clearfix";
+
+header{
+	.tabs {
+		background-color: $tabs-background-color;
+		@include pie-clearfix();
+
+		.nav-tabs{
+			ul{
+				li{
+					display: inline-block;
+					float:left;
+					padding: 0.8em 1em;
+
+					a{
+						color: $tabs-link-color;
+						font-weight: 500;
+						font-size: 0.9em;
+					}
+
+					&.active{
+						background-color: $tabs-active-background-color;
+						position: relative;
+
+						a{
+							color: $tabs-active-link-color;
+						}
+
+						&::after {
+							background-image: url('../images/nip.svg');
+							background-position: center top;
+							background-repeat: no-repeat;
+							width: 100%;
+							height: 6px;
+							content: '';
+							left: 0;
+							position: absolute;
+							bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		a{
+			line-height: 1.5em;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@import "../helpers/build-grid";
+@import "compass/css3/box-sizing";
+@import "compass/utilities/general/clearfix";
+
+.grid {
+	@include pie-clearfix();
+
+	// Any grid items have a class name something like xl-1 or ltl-6.
+	> [class*="-1"],
+	> [class*="-2"],
+	> [class*="-3"],
+	> [class*="-4"],
+	> [class*="-5"],
+	> [class*="-6"],
+	> [class*="-7"],
+	> [class*="-8"],
+	> [class*="-9"] {
+		@include box-sizing(border-box);
+		float: left;
+		min-height: 1px;
+		padding: 0 1em;
+		position: relative;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.grid-no-padding-left {
+		padding-left: 0;
+	}
+}
+
+@include breakpoint(extra_large) {
+	.grid {
+		@include buildGrid(xl);
+	}
+}
+
+@include breakpoint(lt_extra_large) {
+	.grid {
+		@include buildGrid(ltxl);
+	}
+}
+
+@include breakpoint(large) {
+	.grid {
+		@include buildGrid(l);
+	}
+}
+
+@include breakpoint(lt_large) {
+	.grid {
+		@include buildGrid(ltl);
+	}
+}
+
+@include breakpoint(medium) {
+	.grid {
+		@include buildGrid(m);
+	}
+}
+
+@include breakpoint(lt_medium) {
+	.grid {
+		@include buildGrid(ltm);
+	}
+}
+
+@include breakpoint(small) {
+	.grid {
+		@include buildGrid(small);
+	}
+}
+
+@include breakpoint(extra_small) {
+	.grid {
+		@include buildGrid(xs);
+	}
+}

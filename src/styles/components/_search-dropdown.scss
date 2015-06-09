@@ -1,0 +1,58 @@
+@import "compass/utilities/general/clearfix";
+
+.search-dropdown {
+	position: relative;
+	z-index: 100;
+
+	.search-dropdown-input {
+		@include pie-clearfix();
+	}
+
+	.search-dropdown-content {
+		background-color: $search-dropdown-background-color;
+		display: none;
+		@extend .shadow.shadow-nav-drawer;
+		margin-top: .4em;
+		max-height: 75vh;
+		min-width: 12em;
+		overflow: auto;
+		padding: .75em 0;
+		position: absolute;
+		width: 110%;
+
+		ul.search-dropdown-content-group {
+			li {
+				a {
+					color: $search-dropdown-color;
+					display: block;
+					padding: .2em .8em;
+
+					&:hover {
+						background-color: $search-dropdown-hover-background-color;
+					}
+				}
+
+				&:last-child {
+					margin-bottom: .9em;
+				}
+
+				&:first-child {
+					color: $content-color-alt;
+					font-weight: 600;
+					margin-bottom: .2em;
+					padding: .2em .8em;
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.open {
+		.search-dropdown-content {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+.box {
+	border: 1px solid $content-border-color;
+	margin-bottom: 1.5em;
+	position: relative;
+
+	time,
+	em {
+		color: $content-color-alt;
+
+		&.block {
+			display: block;
+			margin-top: .4em;
+		}
+	}
+
+	.box-header {
+		background-color: $content-header-background-color;
+		border-bottom: 1px solid $content-border-color;
+		color: $content-header-color;
+		font-size: 1.05em;
+		font-weight: 600;
+		line-height: 1em;
+		padding: 1em 1.25em;
+		position: relative;
+
+		.abs-right {
+			right: 1em;
+		}
+	}
+
+	.box-content {
+		background-color: $content-background-color;
+		padding: 1em 1.25em;
+
+		&.table {
+			padding: 0;
+		}
+	}
+
+	.box-items {
+		.box-item {
+			position: relative;
+			margin-bottom: 2em;
+
+			.title {
+				font-size: .95em;
+				margin-bottom: .5em;
+			}
+
+			p {
+				font-size: .95em;
+				line-height: 1.4em;
+			}
+
+			.attachments {
+				margin-top: 1em;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.box-content-form {
+		padding: 1em 1.25em;
+	}
+
+	hr {
+		border: none;
+		border-top: 1px solid $content-rule-line;
+		background: none;
+		margin: 1em 0;
+		width: 100%;
+	}
+}

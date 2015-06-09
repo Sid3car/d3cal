@@ -1,0 +1,41 @@
+@import "compass/css3/transform";
+
+.wrapper > .alert:first-child{
+	margin-bottom: 40px;
+}
+
+.alert {
+	font-size:.75em;
+	line-height: 1.1em;
+	padding: .8em .8em .6em 2.5em;
+	position: relative;
+	text-transform: uppercase;
+
+	&.alert-success {
+		background-color: $alert-success-background-color;
+		color: $alert-success-color;
+
+		&::before {
+			content: '';
+			@extend .icon;
+			@extend .icon.icon-check;
+			left: .5em;
+			position: absolute;
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+	}
+
+	&.alert-danger {
+		padding-left: 1em;
+		background-color: $alert-danger-background-color;
+		color: $alert-danger-color;
+	}
+}
+
+.form-normal{
+	.alert{
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+}

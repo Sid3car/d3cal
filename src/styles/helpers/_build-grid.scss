@@ -1,0 +1,13 @@
+@mixin buildGrid($prefix, $columns: 12) {
+	$width: 100 / $columns;
+
+	@for $i from 1 through $columns {
+		.#{$prefix}-#{$i} {
+			@if $i == $columns {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			width: ($width * $i) * 1%;
+		}
+	}
+}

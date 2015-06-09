@@ -1,0 +1,156 @@
+@import "compass/css3/images";
+@import "compass/css3/box-sizing";
+
+.btn {
+	@include box-sizing(border-box);
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	text-align: center;
+
+	.btn-content {
+
+	}
+
+	&.btn-primary {
+		@extend .shadow.shadow-primary;
+		background: $primary-button-background-gradient-top;
+		@include background(linear-gradient($primary-button-background-gradient-top, $primary-button-background-gradient-bottom));
+		border: 1px solid $primary-button-border;
+		color: $primary-button-color;
+		font-size: .95em;
+		font-weight: 600;
+		padding: .65em 3em;
+
+		&:hover {
+			background: $primary-button-background-gradient-top;
+		}
+	}
+
+	&.btn-secondary {
+		@extend .shadow.shadow-secondary;
+		background: $secondary-button-background-gradient-top;
+		@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+		border: 1px solid $secondary-button-border;
+		color: $secondary-button-color;
+		font-size: .85em;
+		font-weight: 600;
+		padding: .4em 2em;
+
+		&:hover {
+			background: $secondary-button-background-gradient-top;
+		}
+	}
+
+	&.btn-danger{
+		@extend .shadow.shadow-secondary;
+		background: $danger-button-background;
+		@include background(linear-gradient($danger-button-background-gradient-top, $danger-button-background-gradient-bottom));
+		border: 1px solid $danger-button-border;
+		color: $danger-button-color;
+		font-size: .85em;
+		font-weight: 600;
+		padding: .4em 2em;
+
+		&:hover {
+			background: $danger-button-background-gradient-top;
+		}
+	}
+
+	&.btn-alt {
+		background: none;
+		border: none;
+		color: $alt-button-color;
+		font-size: .95em;
+		padding: .65em 0;
+
+		&:hover {
+			color: $alt-button-color-hover;
+		}
+
+		&.align-left {
+			padding-left: 0;
+		}
+
+		&.align-right {
+			padding-right: 0;
+		}
+	}
+
+	&.btn-toggle {
+		padding: .5em 0;
+	}
+
+	&.btn-50 {
+		width: 50%;
+	}
+
+	&.btn-block {
+		display: block;
+		padding: 1em;
+		width: 100%;
+	}
+
+	&.btn-facebook,
+	&.btn-google-plus,
+	&.btn-twitter {
+		color: $primary-button-color;
+		font-size: .85em;
+		font-weight: 600;
+		padding: .4em 2em;
+	}
+
+	&.btn-facebook {
+		background: $facebook-button-background-gradient-top;
+		@include background(linear-gradient($facebook-button-background-gradient-top, $facebook-button-background-gradient-bottom));
+		border: 1px solid $facebook-button-border;
+
+		&:hover {
+			background: $facebook-button-background-gradient-top;
+		}
+	}
+
+	&.btn-google-plus {
+		background: $google-plus-button-background-gradient-top;
+		@include background(linear-gradient($google-plus-button-background-gradient-top, $google-plus-button-background-gradient-bottom));
+		border: 1px solid $google-plus-button-border;
+
+		&:hover {
+			background: $google-plus-button-background-gradient-top;
+		}
+	}
+
+	&.btn-twitter {
+		background: $twitter-button-background-gradient-top;
+		@include background(linear-gradient($twitter-button-background-gradient-top, $twitter-button-background-gradient-bottom));
+		border: 1px solid $twitter-button-border;
+
+		&:hover {
+			background: $twitter-button-background-gradient-top;
+		}
+	}
+
+	&.btn-inline {
+		// height: 2.65em;
+		padding: 0;
+
+		.btn-thumbnail {
+			border-right: 1px solid $primary-button-border;
+			display: inline-block;
+			float: left;
+			height: 100%;
+		}
+
+		.btn-content {
+			display: inline-block;
+			padding: .65em .9em;
+		}
+	}
+}
+
+@include breakpoint(lt_large) {
+	.btn.btn-alt {
+		padding: .65em;
+		text-align: center;
+	}
+}

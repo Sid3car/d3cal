@@ -1,0 +1,42 @@
+@import "drawer";
+@import "slideout";
+
+.nav-inline {
+	ul {
+		li {
+			display: inline;
+		}
+	}
+}
+
+.nav-alt {
+	font-size: .75em;
+	font-weight: 600;
+
+	ul {
+		li {
+			margin: 0 1em;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	a, button {
+		color: $nav-alt-color;
+		display: inline-block;
+		line-height: 1em;
+		padding: 1.2em 0;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $nav-alt-color-hover;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+@import "../helpers/sprite";
+@import "compass/utilities/general/clearfix";
+
+.score {
+	@include clearfix();
+
+	.stars {
+		background-color: $stars-background-color;
+		display: block;
+		float: left;
+		height: 17px;
+		position: relative;
+		width: 101px;
+
+		&::before {
+			background-color: $stars-active-background-color;
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 0;
+		}
+
+		&::after {
+			background-image: url('../images/gr-primary-sprite.svg');
+			@include sprite(-41, -2, 101, 17);
+			content: '';
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+
+		@for $i from 1 to 100 {
+			&[data-score="#{$i}"]::before {
+				width: $i * 1%;
+			}
+		}
+	}
+
+	.copy {
+		color: $content-color-alt;
+		font-size: .95em;
+		left: .5em;
+		line-height: 1.3em;
+		position: relative;
+	}
+}
+
+em + .score {
+	margin-top: .25em;
+}

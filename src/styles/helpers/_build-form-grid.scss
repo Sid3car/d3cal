@@ -1,0 +1,18 @@
+@mixin buildFormGrid($prefix, $columns: 12) {
+	$width: 100 / $columns;
+
+	@for $i from 1 through $columns {
+		$a: $columns - $i;
+		$b: $i;
+
+		&.#{$prefix}-#{$a}-and-#{$b} {
+			span:nth-child(1) {
+				width: ($width * $a) * 1%;
+			}
+
+			span:nth-child(2) {
+				width: ($width * $b) * 1%;
+			}
+		}
+	}
+}

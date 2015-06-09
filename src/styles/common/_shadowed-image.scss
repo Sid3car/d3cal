@@ -1,0 +1,36 @@
+.shadowed-image {
+	position: relative;
+	width: 100%;
+
+	img {
+		width: 100%;
+		vertical-align: middle;
+	}
+
+	.caption {
+		bottom: 0;
+		color: $content-color-inverted;
+		font-size: 1.5em;
+		font-weight: 600;
+		line-height: 1.1em;
+		padding: .75em;
+		position: absolute;
+		z-index: 5;
+
+		small {
+			font-size: .7em;
+			font-weight: 400;
+		}
+	}
+
+	&::after {
+		background-image: linear-gradient(-180deg, rgba(45,51,57,0.00) 0%, rgba(0,0,0,0.60) 100%);
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 9em;
+		position: absolute;
+		width: 100%;
+		z-index: 0;
+	}
+}

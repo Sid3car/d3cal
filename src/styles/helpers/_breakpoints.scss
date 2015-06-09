@@ -1,0 +1,56 @@
+@import "map-deep-get";
+
+$breakpoints: (
+	extra_small: (
+		min_width: 0,
+		max_width: 320
+	),
+	small: (
+		min_width: 321,
+		max_width: 568
+	),
+	medium: (
+		min_width: 569,
+		max_width: 768
+	),
+	large: (
+		min_width: 769,
+		max_width: 940
+	),
+	extra_large: (
+		min_width: 941,
+		max_width: 100000
+	),
+	lt_extra_large: (
+		min_width: 0,
+		max_width: 940
+	),
+	lt_large: (
+		min_width: 0,
+		max_width: 768
+	),
+	lt_medium: (
+		min_width: 0,
+		max_width: 568
+	),
+	gt_extra_small: (
+		min_width: 321,
+		max_width: 100000
+	),
+	gt_small: (
+		min_width: 569,
+		max_width: 100000
+	),
+	gt_medium: (
+		min_width: 769,
+		max_width: 100000
+	)
+);
+
+@mixin breakpoint($name) {
+	$min: map-deep-get($breakpoints, $name, min_width) + 'px';
+	$max: map-deep-get($breakpoints, $name, max_width) + 'px';
+	@media only screen and (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}

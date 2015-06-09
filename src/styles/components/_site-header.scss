@@ -1,0 +1,27 @@
+@import "compass/css3/images";
+@import "compass/utilities/general/clearfix";
+
+header.site-header {
+	.primary {
+		background-color: $header-background-gradient-top;
+		@include background-image(linear-gradient($header-background-gradient-top, $header-background-gradient-bottom));
+		@include pie-clearfix();
+		color: $header-color;
+		padding: .6em 0;
+
+		.input {
+			border: 1px solid $primary-button-border;
+		}
+	}
+}
+
+header{
+	.secondary {
+		background-color: $header-secondary-background-color;
+		@include pie-clearfix();
+
+		a{
+			line-height: 1.3em;
+		}
+	}
+}

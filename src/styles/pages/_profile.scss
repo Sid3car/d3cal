@@ -1,0 +1,74 @@
+@import "compass/utilities/general/clearfix";
+
+article.profile {
+	> .wrapper {
+		@include pie-clearfix();
+		padding: 2.5em;
+
+		&.wide{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.pagination{
+		text-align: right;
+	}
+}
+
+@include breakpoint(lt_large) {
+	article.profile {
+		> .wrapper, .wrapper.wide {
+			padding: 1em;
+		}
+	}
+}
+
+.best_in_place{
+	width: auto !important;
+	padding: 0 !important;
+	float: none !important;
+}
+
+.not-found-container{
+	text-align: center;
+	margin: 40px auto;
+
+	.not-found{
+		display: inline-block;
+		padding: 15px 25px 15px 25px;
+		border: 2px dashed $color-gray-dark;
+		color: $color-gray-dark;
+	}
+}
+
+// delete hover/actions
+
+td.actions{
+	padding-top: .6em !important;
+	padding-bottom: .6em !important;
+}
+
+tr:hover, .box-item:hover{
+	.hidden{
+		display: block;
+	}
+}
+
+.hidden{
+	display: none;
+}
+
+.box-item {
+	.btn-danger{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -14px;
+	}
+}
+
+// sign in
+article.sign-in{
+	margin-top: 60px;
+}

@@ -1,0 +1,11 @@
+@import "./scale";
+
+@mixin sprite ($backgroundX: 0, $backgroundY: 0, $width: 0, $height: 0, $scale: 1, $backgroundWidth: 0, $backgroundHeight: 0)
+{
+	background-position:	scale(1px * $backgroundX, $scale) scale(1px * $backgroundY, $scale);
+	@if $scale != 1 {
+		background-size:		scale($backgroundWidth, $scale) scale($backgroundHeight, $scale);
+	}
+	height:					scale(1px * $height, $scale);
+	width:					scale(1px * $width, $scale);
+}

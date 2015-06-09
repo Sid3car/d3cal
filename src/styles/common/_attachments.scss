@@ -1,0 +1,30 @@
+@import "compass/css3/transform";
+
+.attachment {
+	display: inline-block;
+	font-size: .85em;
+	font-weight: 600;
+	padding: .5em 1em;
+	position: relative;
+	z-index: 5;
+
+	&::before {
+		content: '';
+		@include skew(-3deg, 2deg);
+		left: -4px;
+		height: 100%;
+		position: absolute;
+		top: -1px;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&.attachment-image {
+		color: $attachment-image-color;
+		background-color: $attachment-image-background-color;
+
+		&::before {
+			background-color: $attachment-image-background-color;
+		}
+	}
+}

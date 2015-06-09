@@ -1,0 +1,146 @@
+/**
+ * Raw colors
+ */
+$color-blue-extra-light: rgba(233, 244, 251, 1);
+$color-blue-base: rgba(44, 151, 222, 1);
+$color-blue-dark: rgba(6, 104, 172, 1);
+$color-blue-extra-dark: rgba(72, 98, 108, 1);
+$color-blue-gradient-light: rgba(36, 149, 219, 1);
+$color-blue-gradient-dark: rgba(34, 144, 215, 1);
+$color-blue-gradient-alt-light: rgba(38, 149, 223, 1);
+$color-blue-gradient-alt-dark: rgba(31, 135, 206, 1);
+
+$color-white-base: rgba(255, 255, 255, 1);
+
+$color-gray-ultra-light: rgba(248, 250, 250, 1);
+$color-gray-extra-light: rgba(44, 151, 222, .1);
+$color-gray-light: rgba(233, 238, 239, 1);
+$color-gray-base: rgba(239, 242, 243, 1);
+$color-gray-med: rgba(230, 235, 237, 1);
+$color-gray-dark: rgba(188, 196, 200, 1);
+$color-gray-darker: rgba(135, 155, 163, 1);
+$color-gray-darkest: rgba(150, 164, 168, 1);
+
+$color-black-base: rgba(72, 98, 108, 1);
+$color-black-dark: rgba(62, 70, 78, 1);
+$color-black-darkest: rgba(51, 59, 65, 1);
+
+$color-green-light: rgba(213, 243, 226, 1);
+$color-green-base: rgba(44, 191, 109, .8);
+
+$color-orange-extra-light: rgba(252, 245, 223, .7);
+$color-orange-base: rgba(255, 161, 90, 1);
+
+$color-red-light: #ef5063;
+$color-red-base: #dd273b;
+$color-red-dark: #B01C2C;
+
+/**
+ * Colors in their application contexts
+ */
+// Body
+$body-background-color: $color-gray-base;
+$body-color: $color-black-base;
+
+// Header
+$header-background-gradient-top: $color-blue-gradient-light;
+$header-background-gradient-bottom: $color-blue-gradient-dark;
+$header-color: $color-white-base;
+$header-secondary-background-color: $color-white-base;
+
+// Buttons
+$primary-button-background-gradient-top: $color-blue-gradient-alt-light;
+$primary-button-background-gradient-bottom: $color-blue-gradient-alt-dark;
+$primary-button-border: $color-blue-dark;
+$primary-button-color: $color-white-base;
+$secondary-button-background-gradient-top: $color-white-base;
+$secondary-button-background-gradient-bottom: $color-gray-light;
+$secondary-button-border: $color-gray-darkest;
+$secondary-button-color: $color-black-base;
+$secondary-button-hover-background-color: $color-white-base;
+$alt-button-color: $color-blue-base;
+$alt-button-color-hover: $color-blue-dark;
+$facebook-button-background-gradient-top: rgba(87, 119, 204, 1);
+$facebook-button-background-gradient-bottom: rgba(61, 81, 162, 1);
+$facebook-button-border: rgba(52, 79, 148, 1);
+$google-plus-button-background-gradient-top: rgba(253, 110, 85, 1);
+$google-plus-button-background-gradient-bottom: rgba(216, 71, 46, 1);
+$google-plus-button-border: rgba(212, 68, 43, 1);
+$twitter-button-background-gradient-top: rgba(119, 194, 252, 1);
+$twitter-button-background-gradient-bottom: rgba(76, 164, 233, 1);
+$twitter-button-border: rgba(74, 163, 232, 1);
+$danger-button-background: $color-red-base;
+$danger-button-background-gradient-top: $color-red-light;
+$danger-button-background-gradient-bottom: $color-red-base;
+$danger-button-border: $color-red-dark;
+$danger-button-color: $color-white-base;
+
+// Content
+$content-header-background-color: $color-gray-med;
+$content-header-color: $color-black-base;
+$content-background-color: $color-white-base;
+$content-border-color: $color-gray-darker;
+$content-color: $color-black-base;
+$content-color-alt: $color-gray-darker;
+$content-color-inverted: $color-white-base;
+$content-color-link: $color-blue-base;
+$content-color-link-hover: $color-blue-dark;
+$content-color-highlight: $color-blue-extra-light;
+$content-color-success: $color-green-base;
+$content-rule-line: $color-gray-dark;
+
+// Navigation
+$nav-alt-color: $color-gray-darkest;
+$nav-alt-color-hover: $color-black-base;
+$nav-drawer-background-color: transparentize($color-white-base, 0.05);
+$nav-drawer-alt-background-color: $color-gray-base;
+$nav-drawer-color: $color-blue-extra-dark;
+$nav-drawer-alt-color: $color-gray-darker;
+$nav-drawer-hover-background-color: $color-gray-med;
+$nav-slideout-background-color: transparentize($color-white-base, 0.05);
+$nav-slideout-alt-background-color: $color-gray-base;
+$nav-slideout-color: $color-blue-extra-dark;
+$nav-slideout-alt-color: $color-gray-darker;
+$nav-slideout-hover-background-color: $color-gray-med;
+
+// Tabs
+$tabs-background-color: $color-black-dark;
+$tabs-active-background-color: $color-black-darkest;
+$tabs-link-color: $color-gray-dark;
+$tabs-active-link-color: $color-white-base;
+
+// Form
+$form-border: $color-gray-darker;
+$form-placeholder-border: $color-gray-dark;
+$form-alt-background-color: $color-gray-ultra-light;
+
+// Table
+$content-table-head-background-color: $color-blue-extra-light;
+$content-table-head-color: $color-blue-base;
+$content-table-alt-background-color: $color-gray-ultra-light;
+$content-table-view-more-color: $color-orange-base;
+$content-table-view-more-background-color: $color-orange-extra-light;
+$content-table-increase: $color-green-base;
+$content-table-decrease: $color-red-base;
+
+// Misc.
+$stars-background-color: $color-gray-med;
+$stars-active-background-color: $color-orange-base;
+$toggle-list-color: $color-gray-darker;
+$toggle-list-hover-color: $color-black-base;
+$toggle-list-active-background-color: #DAE2E5;
+
+// Alerts
+$alert-success-background-color: $color-green-base;
+$alert-success-color: $color-white-base;
+$alert-danger-background-color: $color-red-light;
+$alert-danger-color: $color-white-base;
+
+// Search
+$search-dropdown-background-color: $color-white-base;
+$search-dropdown-color: $color-black-base;
+$search-dropdown-hover-background-color: $color-gray-med;
+
+// Attachments
+$attachment-image-background-color: $color-green-light;
+$attachment-image-color: $color-green-base;

@@ -1,0 +1,8 @@
+@import "compass/utilities/general/clearfix";
+
+article.dashboard {
+	> .wrapper {
+		@include pie-clearfix();
+		padding: 2.5em;
+	}
+}

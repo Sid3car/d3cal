@@ -1,0 +1,30 @@
+@import "../helpers/sprite";
+
+.icon {
+	background-image: url('../images/gr-primary-sprite.svg');
+	display: inline-block;
+
+	&.icon-search {
+		@include sprite(-2, -2, 17, 17);
+	}
+
+	&.icon-check {
+		@include sprite(-21, -2, 18, 18);
+	}
+
+	&.icon-toggle {
+		@include sprite(-147, -2, 20, 17);
+	}
+
+	&.icon-pie {
+		@include sprite(-2, -22, 18, 18);
+	}
+
+	&.icon-people {
+		@include sprite(-2, -42, 18, 23);
+	}
+
+	&.icon-chart {
+		@include sprite(-2, -68, 16, 21);
+	}
+}

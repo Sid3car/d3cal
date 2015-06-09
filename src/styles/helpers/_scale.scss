@@ -1,0 +1,3 @@
+@function scale($px, $scale) {
+	@return ceil($px * $scale);
+}

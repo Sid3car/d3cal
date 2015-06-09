@@ -1,0 +1,28 @@
+{
+  "name": "sid3car-cms-styles",
+  "version": "1.0.0",
+  "description": "A framework of styles and scripts to use across CMS/CRM systems.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:sid3car/sid3car-cms-styles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-compass": "^2.0.3",
+    "gulp-concat": "^2.4.3",
+    "gulp-copy": "0.0.2",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-minify-css": "^0.3.12",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.2"
+  }
+}

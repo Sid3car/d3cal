@@ -1,0 +1,93 @@
+@import "compass/css3/transform";
+
+.custom-select {
+	@extend .shadow.shadow-secondary;
+	background: $secondary-button-background-gradient-top;
+	@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+	border: 1px solid $secondary-button-border;
+	display: inline-block;
+	color: $content-color-alt;
+	cursor: pointer;
+	font-size: .85em;
+	font-weight: 600;
+	height: 1.8em;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+
+	.active {
+		display: inline-block;
+		line-height: 1.1em;
+		padding: .4em 2.4em .4em .8em;
+	}
+
+	ul {
+		padding: 0 0 .4em 0;
+
+		li {
+			display: none;
+			line-height: 1.1em;
+			padding: .4em 2.4em .4em .8em;
+		}
+	}
+
+	&:hover,
+	&.open {
+		color: $secondary-button-color;
+
+		&::before {
+			border-top-color: $secondary-button-color;
+		}
+	}
+
+	&.open {
+		overflow: visible;
+
+		.active {
+			background-color: $secondary-button-background-gradient-top;
+		}
+
+		ul {
+			@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+			border: 1px solid $secondary-button-border;
+			border-top: 0;
+			margin: 0 -1px;
+			padding-bottom: 0;
+			position: relative;
+			z-index: 5;
+
+			li {
+				border-top: 1px solid $secondary-button-border;
+				display: block;
+
+				&:hover,
+				&.active {
+					background-color: $secondary-button-hover-background-color;
+				}
+			}
+		}
+	}
+
+	&::before {
+		border-top: .3em solid $content-color-alt;
+		border-right: .3em solid transparent;
+		border-left: .3em solid transparent;
+		content: '';
+		position: absolute;
+		right: .6em;
+		top: 50%;
+		@include translateY(-50%);
+		z-index: 10;
+	}
+
+	&::after {
+		border-left: 1px solid $secondary-button-border;
+		content: '';
+		display: block;
+		height: calc(100% + 2px);
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1.6em;
+	}
+}

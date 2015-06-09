@@ -1,0 +1,121 @@
+@import "../helpers/build-grid";
+@import "compass/css3/transform";
+
+.table {
+	font-size: 0.95em;
+	table-layout: fixed;
+	width: 100%;
+
+	thead {
+		background-color: $content-table-head-background-color;
+
+		th {
+			color: $content-table-head-color;
+			font-weight: 600;
+			padding: 1em;
+		}
+	}
+
+	tbody {
+		tr {
+			&:nth-child(even) {
+				background-color: $content-table-alt-background-color;
+
+				.overflow-fade::after {
+					@include background(linear-gradient(90deg, transparentize($content-table-alt-background-color, 1) 0%, $content-table-alt-background-color 100%));
+				}
+			}
+		}
+
+		td {
+			line-height: 1.2em;
+			padding: 1em;
+		}
+	}
+
+	colgroup {
+		.checkbox-column {
+			width: 2em;
+		}
+
+		.rank-column {
+			width: 2em;
+		}
+
+		.thumbnail-column {
+			width: 70px;
+		}
+	}
+
+	.rank {
+		font-weight: 600;
+	}
+
+	.increase {
+		&::before {
+			color: $content-table-increase;
+			content: "↑";
+		}
+	}
+
+	.decrease {
+		&::before {
+			color: $content-table-decrease;
+			content: "↓";
+		}
+	}
+
+	.thumbnail {
+		width: 52px;
+
+		div {
+			background-position: center center;
+			background-size: cover;
+			@extend .circle;
+			height: 50px;
+			width: 50px;
+		}
+	}
+
+	.view-more {
+		background-color: $content-table-view-more-background-color;
+		border-top: 1px solid $content-border-color;
+		color: $content-table-view-more-color;
+		padding: .6em 1em;
+
+		a {
+			color: inherit;
+			display: block;
+			font-size: .85em;
+			font-weight: 600;
+			text-transform: uppercase;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	@include buildGrid(w, 100);
+}
+
+@include breakpoint(lt_large) {
+	.table-responsive {
+		min-height: .01%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: 100%;
+
+		table {
+			max-width: 100%;
+			table-layout: auto;
+			width: 100%;
+		}
+
+		.overflow-fade {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

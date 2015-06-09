@@ -1,0 +1,12 @@
+table{
+	td.thumbnail{
+		position: relative;
+
+		img.endorsement{
+			position: absolute;
+			width: 20px;
+			bottom: 12px;
+			right: 10px;
+		}
+	}
+}

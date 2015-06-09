@@ -1,0 +1,1492 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="../dist/styles/index.css">
+
+	</head>
+
+	<body>
+
+		<div data-hook="main-content" class="main-content">
+
+			<header class="site-header">
+
+				<!-- Primary header content in blue -->
+				<section class="primary">
+
+					<div class="wrapper clearfix">
+
+						<!-- Dropdown nav - "ltl" will hide when less than the large breakpoint -->
+						<nav class="nav-drawer nav-drawer-left site-nav pull-left ltl-hide" data-nav-drawer>
+
+							<button class="btn btn-primary" data-hook="drawer-toggle">Contacts</button>
+
+							<div class="nav-drawer-content" data-hook="drawer-content">
+
+								<ul class="nav-drawer-btn-list">
+									<li>
+										<a href="/">
+											<i class="icon icon-pie"></i>
+											Dashboard
+										</a>
+									</li>
+									<li>
+										<a href="/contacts">
+											<i class="icon icon-people"></i>
+											Contacts
+										</a>
+									</li>
+									<li>
+										<a href="/reports">
+											<i class="icon icon-chart"></i>
+											Reports
+										</a>
+									</li>
+								</ul>
+
+							</div>
+
+						</nav>
+
+						<!-- Search form with an interlocked (lockup) input and button. Search Dropdown helper applied with the data attribute. -->
+						<form class="form pull-left shadow shadow-primary form-lockup ltl-hide search-dropdown" data-search-dropdown>
+
+							<div class="search-dropdown-input">
+
+								<input class="input" type="text" placeholder="Search" name="search" autocomplete="off">
+
+								<button class="btn btn-primary btn-inline">
+									<i class="icon icon-search"></i>
+								</button>
+
+							</div>
+
+							<div class="search-dropdown-content" data-hook="search-dropdown-content">
+
+								<ul class="search-dropdown-content-group">
+									<li>Citizen</li>
+									<li>
+										<a href="#">Andrew Luck</a>
+									</li>
+									<li>
+										<a href="#">Reggie Wayne</a>
+									</li>
+									<li>
+										<a href="#">Anthony Castonzo</a>
+									</li>
+								</ul>
+
+								<ul class="search-dropdown-content-group">
+									<li>Corporation</li>
+									<li>
+										<a href="#">Pat McAffee</a>
+									</li>
+									<li>
+										<a href="#">Barry Sanders</a>
+									</li>
+								</ul>
+
+								<ul class="search-dropdown-content-group">
+									<li>Legislator</li>
+									<li>
+										<a href="#">Robert PorchÃ¨</a>
+									</li>
+									<li>
+										<a href="#">Ty Hilton</a>
+									</li>
+									<li>
+										<a href="#">Terry Bradshaw</a>
+									</li>
+								</ul>
+
+								<ul class="search-dropdown-content-group">
+									<li>Event</li>
+								</ul>
+
+								<ul class="search-dropdown-content-group">
+									<li>Organization</li>
+								</ul>
+
+								<ul class="search-dropdown-content-group">
+									<li>School</li>
+								</ul>
+
+							</div>
+
+						</form>
+
+						<!-- Another dropdown nav, pulled to the right. -->
+						<nav class="nav-drawer pull-right nav-drawer-right user-nav" data-nav-drawer>
+
+							<button class="btn btn-primary btn-inline" data-hook="drawer-toggle">
+								<img src="http://placehold.it/38x38" class="btn-thumbnail ltl-hide">
+								<span class="btn-content">Betsy Wiley</span>
+							</button>
+
+							<div class="nav-drawer-content nav-drawer-content-padding" data-hook="drawer-content">
+
+								<ul class="nav-drawer-list">
+									<li>
+										<a href="/user/profile">
+											User Profile
+										</a>
+									</li>
+									<li>
+										<a href="/user/settings">
+											System Settings
+										</a>
+									</li>
+								</ul>
+
+								<button class="btn btn-secondary btn-block">
+									Sign Out
+								</button>
+
+							</div>
+
+						</nav>
+
+						<!-- Mobile navigation. This content gets moved by the Nav Slideout plugin (applied with the data attribute). -->
+						<nav class="nav-slideout nav-slideout-left" data-nav-slideout>
+
+							<a href="#" class="btn btn-toggle gtm-hide pull-left nav-slideout-toggle" data-hook="slideout-toggle"><i class="icon icon-toggle"></i></a>
+
+							<div class="nav-slideout-content" data-hook="slideout-content">
+
+								<form class="form shadow form-lockup search-dropdown nav-slideout-search" data-search-dropdown>
+
+									<div class="search-dropdown-input">
+
+										<input class="input" type="text" placeholder="Search" name="search" autocomplete="off">
+
+										<button class="btn btn-primary btn-inline">
+											<i class="icon icon-search"></i>
+										</button>
+
+									</div>
+
+									<div class="search-dropdown-content" data-hook="search-dropdown-content">
+
+										<ul class="search-dropdown-content-group">
+											<li>Citizen</li>
+											<li>
+												<a href="#">Andrew Luck</a>
+											</li>
+											<li>
+												<a href="#">Reggie Wayne</a>
+											</li>
+											<li>
+												<a href="#">Anthony Castonzo</a>
+											</li>
+										</ul>
+
+										<ul class="search-dropdown-content-group">
+											<li>Corporation</li>
+											<li>
+												<a href="#">Pat McAffee</a>
+											</li>
+											<li>
+												<a href="#">Barry Sanders</a>
+											</li>
+										</ul>
+
+										<ul class="search-dropdown-content-group">
+											<li>Legislator</li>
+											<li>
+												<a href="#">Robert PorchÃ¨</a>
+											</li>
+											<li>
+												<a href="#">Ty Hilton</a>
+											</li>
+											<li>
+												<a href="#">Terry Bradshaw</a>
+											</li>
+										</ul>
+
+										<ul class="search-dropdown-content-group">
+											<li>Event</li>
+										</ul>
+
+										<ul class="search-dropdown-content-group">
+											<li>Organization</li>
+										</ul>
+
+										<ul class="search-dropdown-content-group">
+											<li>School</li>
+										</ul>
+
+									</div>
+
+								</form>
+
+								<ul class="nav-slideout-list">
+									<li>
+										<a href="/">
+											Dashboard
+										</a>
+									</li>
+									<li>
+										<a href="/contacts">
+											Contacts
+										</a>
+									</li>
+									<li>
+										<a href="/reports">
+											Reports
+										</a>
+									</li>
+									<li>
+										<a href="#">Print</a>
+									</li>
+									<li>
+										<a href="#">Share</a>
+									</li>
+									<li>
+										<a href="#">Download CSV</a>
+									</li>
+								</ul>
+
+							</div>
+
+						</nav>
+
+					</div>
+
+				</section>
+
+				<!-- Secondary header content in white -->
+				<section class="secondary ltl-hide">
+
+					<div class="wrapper clearfix">
+
+						<button class="btn btn-alt pull-left" data-hook="back">« Back to Contacts</button>
+
+						<nav class="nav-inline nav-alt pull-right">
+							<ul>
+								<li>
+									<a href="#">Print</a>
+								</li>
+								<li>
+									<a href="#">Share</a>
+								</li>
+								<li>
+									<a href="#">Download CSV</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</section>
+
+				<!-- Tab header -->
+				<section class="tabs">
+
+					<div class="wrapper clearfix">
+
+						<nav class="nav-inline nav-tabs">
+							<ul>
+								<li class="active">
+									<a href="#">Tab 1</a>
+								</li>
+								<li>
+									<a href="#">Tab 2</a>
+								</li>
+								<li>
+									<a href="#">Tab 3</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</section>
+
+			</header>
+
+			<!-- Dashboard section has some special styles dealing with margins/padding. -->
+			<article class="dashboard">
+
+				<div class="wrapper">
+
+					<div class="grid">
+
+						<!-- Upcoming Tasks - Box with toggles -->
+						<section class="box xl-12 ltxl-12">
+
+							<header class="box-header">
+								Upcoming Tasks
+
+								<select class="abs-right center-y" data-custom-select>
+									<option value="2014">2014</option>
+									<option selected value="2015">2015</option>
+								</select>
+							</header>
+
+							<div class="toggle-list" data-toggle-list>
+								<a class="toggle-list-item active" data-value="assigned">Assigned this week</a>
+								<a class="toggle-list-item" data-value="recurring">Recurring</a>
+								<a class="toggle-list-item" data-value="all">All</a>
+							</div>
+
+							<div class="table-responsive">
+
+								<table class="box-content table">
+
+									<colgroup>
+										<col class="checkbox-column">
+										<col>
+									</colgroup>
+
+									<tbody>
+
+										<tr>
+											<td class="center">
+												<label class="checkbox">
+													<input type="checkbox">
+													<div class="display-box"></div>
+												</label>
+											</td>
+											<td>
+												<a href="#">Tyler Henke</a> assigned to you "Personally invite Curt to this week's quality education celebration."
+												<time datetime="2014-11-20T22:24:00-0:400" class="block">11/20/14 at 10:00am</time>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="checkbox">
+													<input type="checkbox">
+													<div class="display-box"></div>
+												</label>
+											</td>
+											<td>
+												<a href="#">Aaron White</a> assigned You Email Curt's mother about voucher eligibility.
+												<time datetime="2014-11-21T22:24:00-0:400" class="block">11/20/14 at 10:00am</time>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="checkbox">
+													<input type="checkbox">
+													<div class="display-box"></div>
+												</label>
+											</td>
+											<td>
+												<a href="#">Tyler Henke</a> assigned to you "Personally invite Curt to this week's quality education celebration."
+												<time datetime="2014-11-20T22:24:00-0:400" class="block">11/20/14 at 10:00am</time>
+											</td>
+										</tr>
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</section>
+
+						<!-- Recent Activity - Table with appended data-->
+						<section class="box xl-12 ltxl-12">
+
+							<header class="box-header">
+								Recent Activity
+							</header>
+
+							<div class="table-responsive">
+
+								<table class="box-content table">
+
+									<colgroup>
+										<col class="w-20">
+										<col class="w-15">
+										<col class="w-50">
+										<col class="w-15">
+									</colgroup>
+
+									<thead>
+										<tr>
+											<th data-name="name">
+												Name
+											</th>
+											<th data-name="source">
+												Source
+											</th>
+											<th data-name="activity">
+												Activity
+											</th>
+											<th data-name="date">
+												Date
+											</th>
+										</tr>
+									</thead>
+
+									<tbody>
+
+										<tr>
+											<td>
+												Tyler Henke
+											</td>
+											<td>
+												Facebook
+											</td>
+											<td class="overflow-fade">
+												Liked Hoosiers for Quality Education on Facebook
+											</td>
+											<td >
+												Today
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												Forrest Fowler
+											</td>
+											<td>
+												Action Center
+											</td>
+											<td class="overflow-fade">
+												Emailed Peggy Welsh
+											</td>
+											<td >
+												Today
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												Tosha Salyers
+											</td>
+											<td>
+												Website
+											</td>
+											<td class="overflow-fade">
+												Submitted a Hoosier Voices success story
+											</td>
+											<td >
+												10/20/2014
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												Unknown
+											</td>
+											<td>
+												Facebook
+											</td>
+											<td class="overflow-fade">
+												Liked Hoosiers for Quality Education on Facebook
+											</td>
+											<td >
+												10/20/2014
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												Forrest Fowler
+											</td>
+											<td>
+												Action Center
+											</td>
+											<td class="overflow-fade">
+												Called Dick Cheney
+											</td>
+											<td >
+												10/15/2014
+											</td>
+										</tr>
+
+									</tbody>
+
+									<tfoot>
+										<tr>
+											<td colspan="4" class="view-more view-more-example">
+												<a href="#">View more results</a>
+											</td>
+										</tr>
+									</tfoot>
+
+								</table>
+
+							</div>
+
+						</section>
+
+						<!-- Popular Legislators - Table with thumbnails -->
+						<section class="box xl-12 ltxl-12">
+
+							<header class="box-header">
+								Popular Legislators
+							</header>
+
+							<div class="table-responsive">
+
+								<table class="box-content table">
+
+									<colgroup>
+										<col class="rank-column">
+										<col class="thumbnail-column">
+										<col class="w-18">
+										<col class="w-15">
+										<col class="w-12">
+										<col class="">
+										<col class="">
+										<col class="">
+										<col class="">
+										<col class="">
+									</colgroup>
+
+									<thead>
+										<tr>
+											<th></th>
+											<th></th>
+											<th>
+												Name
+											</th>
+											<th>
+												Party
+											</th>
+											<th>
+												Chamber
+											</th>
+											<th>
+												Email
+											</th>
+											<th>
+												Twitter
+											</th>
+											<th>
+												Facebook
+											</th>
+											<th>
+												Call
+											</th>
+											<th>
+												Total
+											</th>
+										</tr>
+									</thead>
+
+									<tbody>
+
+										<tr>
+											<td class="rank">
+												1
+											</td>
+											<td class="thumbnail">
+												<div style="background-image: url('http://static.openstates.org/photos/small/INL000144.jpg');"></div>
+											</td>
+											<td class="overflow-fade">
+												<a href="#">Matthew Ubelhor</a>
+											</td>
+											<td>
+												Republican
+											</td>
+											<td>
+												Senate
+											</td>
+											<td>
+												62
+											</td>
+											<td>
+												23
+											</td>
+											<td>
+												34
+											</td>
+											<td>
+												79
+											</td>
+											<td>
+												304
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												2
+											</td>
+											<td class="thumbnail">
+												<div style="background-image: url('http://static.openstates.org/photos/small/INL000155.jpg');"></div>
+											</td>
+											<td class="overflow-fade">
+												<a href="#">Mark Stoops</a>
+											</td>
+											<td>
+												Democratic
+											</td>
+											<td>
+												House
+											</td>
+											<td>
+												60
+											</td>
+											<td>
+												102
+											</td>
+											<td>
+												60
+											</td>
+											<td>
+												53
+											</td>
+											<td>
+												295
+											</td>
+										</tr>
+
+									</tbody>
+
+								</table>
+
+							</div>
+
+						</section>
+
+						<!-- Outlook -->
+						<div class="xl-6 l-6 ltl-12 grid-no-padding-left">
+
+							<section class="box">
+
+								<header class="box-header">
+									Outlook
+								</header>
+
+								<form class="box-content form form-horizontal xl-6-and-6 l-6-and-6 ltl-12-and-0">
+
+									<h2>Achievement</h2>
+
+									<label class="form-field">
+										<span class="label">D or F Schools in Region</span>
+										<span class="input placeholder">
+											4
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Students in D or F School</span>
+										<span class="input placeholder">
+											2,501
+										</span>
+									</label>
+
+									<hr>
+
+									<h2>School Choice</h2>
+
+									<label class="form-field">
+										<span class="label">Students in Charter Schools</span>
+										<span class="input placeholder">
+											3,046
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Students in Voucher Program</span>
+										<span class="input placeholder">
+											21,342
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Students in an SGO Program</span>
+										<span class="input placeholder">
+											988
+										</span>
+									</label>
+
+								</form>
+
+							</section>
+
+						</div>
+
+						<!-- New Contacts - Table with trend arrows -->
+						<div class="xl-6 l-6 ltl-12">
+
+							<section class="box">
+
+								<header class="box-header">
+									New Contacts
+								</header>
+
+								<table class="box-content table">
+
+									<colgroup>
+										<col class="rank-column">
+										<col>
+										<col>
+										<col>
+									</colgroup>
+
+									<thead>
+										<tr>
+											<th></th>
+											<th>
+												County
+											</th>
+											<th>
+												Total
+											</th>
+											<th>
+												This Week
+											</th>
+										</tr>
+									</thead>
+
+									<tbody>
+
+										<tr>
+											<td class="rank">
+												1
+											</td>
+											<td>
+												Monroe
+											</td>
+											<td>
+												100
+											</td>
+											<td class="increase">
+												5
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												2
+											</td>
+											<td>
+												Marion
+											</td>
+											<td>
+												99
+											</td>
+											<td class="increase">
+												7
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												3
+											</td>
+											<td>
+												Morgan
+											</td>
+											<td>
+												56
+											</td>
+											<td class="increase">
+												9
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												4
+											</td>
+											<td>
+												Brown
+											</td>
+											<td>
+												33
+											</td>
+											<td class="decrease">
+												23
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												5
+											</td>
+											<td>
+												Owen
+											</td>
+											<td>
+												20
+											</td>
+											<td class="increase">
+												45
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												6
+											</td>
+											<td>
+												Monroe
+											</td>
+											<td>
+												100
+											</td>
+											<td class="increase">
+												5
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												7
+											</td>
+											<td>
+												Marion
+											</td>
+											<td>
+												99
+											</td>
+											<td class="decrease">
+												8
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												8
+											</td>
+											<td>
+												Morgan
+											</td>
+											<td>
+												56
+											</td>
+											<td class="decrease">
+												9
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												9
+											</td>
+											<td>
+												Brown
+											</td>
+											<td>
+												33
+											</td>
+											<td class="increase">
+												23
+											</td>
+										</tr>
+
+										<tr>
+											<td class="rank">
+												10
+											</td>
+											<td>
+												Owen
+											</td>
+											<td>
+												20
+											</td>
+											<td class="decrease">
+												12
+											</td>
+										</tr>
+
+									</tbody>
+
+								</table>
+
+							</section>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<article class="citizen profile">
+
+				<div class="wrapper">
+
+					<div class="grid">
+
+						<!-- User name and image -->
+						<div class="xl-4 l-4 ltl-12">
+
+							<section class="box">
+
+								<div class="shadowed-image">
+									<img src="https://maps.googleapis.com/maps/api/staticmap?center=-15.800513,-47.91378&zoom=11&size=240x240">
+									<div class="caption">
+										Curt Merlau
+										<br>
+										<small>Concerned Citizen</small>
+									</div>
+								</div>
+
+								<div class="score box-content">
+									<div class="stars" data-score="80"></div>
+									<div class="copy">(80%)</div>
+								</div>
+
+							</section>
+
+							<form accept-charset="UTF-8" action="/schools" class="box form form-normal" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+
+								<div class="box-header">
+									Filters
+								</div>
+
+								<div class="box-content">
+
+									<label class="form-field">
+										<span class="label">Name</span>
+										<input class="input" id="name" name="name" type="text">
+									</label>
+
+									<label class="form-field">
+										<span class="label">Type</span>
+										<div class="select">
+											<select class="input" id="school_type_id" name="school_type_id">
+												<option>- Select type -</option>
+												<option value="1">Traditional Public</option>
+												<option value="2">Private</option>
+												<option value="3">Charter</option>
+												<option value="4">Magnet</option>
+												<option value="5">Virtual</option>
+												<option value="6">Career and Technical Education</option>
+											</select>
+										</div>
+									</label>
+
+								</div>
+
+							</form>
+
+							<button class="btn btn-secondary btn-block">Edit Profile</button>
+							<br>
+							<button class="btn btn-danger btn-block">Delete Citizen</button>
+
+						</div>
+
+						<!-- User info -->
+						<div class="xl-8 l-8 ltl-12">
+
+							<!-- About - List of inputs -->
+							<section class="box">
+
+								<header class="box-header">
+									About
+								</header>
+
+								<form class="box-content form form-horizontal xl-4-and-8 l-4-and-8 ltl-12-and-0">
+
+									<label class="form-field">
+										<span class="label">Date of Birth</span>
+										<span class="input placeholder">
+											May 30, 1991
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Ethnicity</span>
+										<span class="input placeholder">
+											Caucasian
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Gender</span>
+										<span class="input placeholder">
+											Male
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Primary Language</span>
+										<span class="input placeholder">
+											English
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Marital Status</span>
+										<span class="input placeholder">
+											Married
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Employer</span>
+										<span class="input placeholder">
+											<a href="#" class="employer">Institute for Quality Education</a>
+											<small class="title">President and CEO</small>
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Representative</span>
+										<span class="input placeholder">
+											Tosha Salyers
+										</span>
+									</label>
+
+								</form>
+
+							</section>
+
+							<!-- Contact - List of inputs with button in the header and two separate content groups separated by an hr -->
+							<section class="box">
+
+								<header class="box-header">
+									Contact
+									<button class="btn btn-secondary abs-right center-y">Send Email</button>
+								</header>
+
+								<form class="box-content">
+
+									<div class="form form-horizontal xl-4-and-8 l-4-and-8 ltl-12-and-0">
+										<label class="form-field">
+											<span class="label">Primary Address</span>
+											<span class="input placeholder">
+												1645 East Rhorer Road
+												<br>Bloomington, IN 47401
+											</span>
+										</label>
+
+										<label class="form-field">
+											<span class="label">Phone</span>
+											<span class="input placeholder">
+												(812) 322-7392
+											</span>
+										</label>
+
+										<label class="form-field">
+											<span class="label">Email Address</span>
+											<span class="input placeholder">
+												mike.lindell@i4qed.org
+											</span>
+										</label>
+
+									</div>
+
+									<hr>
+
+									<div class="form">
+										<label class="form-field">
+											<span class="checkbox">
+												<input type="checkbox" name="lorem" value="Ipsum">
+												<span class="display-box"></span>
+											</span>
+											<span class="text">Lorem ipsum email dolor cras eliquam</span>
+										</label>
+									</div>
+
+								</form>
+
+							</section>
+
+							<!-- Social - Inputs in a grid with colored buttons -->
+							<section class="box">
+
+								<header class="box-header">
+									Social
+								</header>
+
+								<form class="box-content form grid">
+
+									<div class="xl-6 l-6 ltl-12">
+
+										<label class="form-field">
+											<span class="label">Facebook</span>
+											<span class="input placeholder overflow-fade">
+												https://www.facebook.com/coworkbtown
+											</span>
+											<a href="#" class="btn btn-50 btn-facebook">Facebook</a>
+										</label>
+
+										<label class="form-field">
+											<span class="label">Google+</span>
+											<span class="input placeholder overflow-fade">
+												https://plus.google.com/104264680474457324315/posts/
+											</span>
+											<a href="#" class="btn btn-50 btn-google-plus">Google+</a>
+										</label>
+
+									</div>
+
+									<div class="xl-6 l-6 ltl-12">
+
+										<label class="form-field">
+											<span class="label">Twitter</span>
+											<span class="input placeholder overflow-fade">
+												https://twitter.com/coworkbtown
+											</span>
+											<a href="#" class="btn btn-50 btn-twitter">Twitter</a>
+										</label>
+
+									</div>
+
+								</form>
+
+							</section>
+
+							<!-- Schools - Inputs with groups with headers -->
+							<section class="box">
+
+								<header class="box-header">
+									Schools
+								</header>
+
+								<form class="box-content form form-horizontal xl-4-and-8 l-4-and-8 ltl-12-and-0">
+
+									<h2>Assigned</h2>
+
+									<label class="form-field">
+										<span class="label">Elementary School</span>
+										<span class="input placeholder">
+											<a href="#">Fairview Elementary</a>
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Middle School</span>
+										<span class="input placeholder">
+											<a href="#">Jackson Creek Middle School</a>
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">High School</span>
+										<span class="input placeholder">
+											<a href="#">Bloomington High School South</a>
+										</span>
+									</label>
+
+									<h2>Attending</h2>
+
+									<label class="form-field">
+										<span class="label">Elementary School</span>
+										<span class="input placeholder">
+											Harmony School
+										</span>
+									</label>
+
+								</form>
+
+							</section>
+
+							<!-- Media - Inline button and checkboxes -->
+							<section class="box">
+
+								<header class="box-header">
+									Media
+								</header>
+
+								<form class="box-content form">
+
+									<button class="btn btn-secondary">Request Media Vet</button>
+
+									<hr>
+
+									<label class="form-field">
+										<span class="checkbox">
+											<input type="checkbox" name="signed_nda" value="1">
+											<span class="display-box"></span>
+										</span>
+										<span class="text">Signed non disclosure agreement</span>
+									</label>
+
+									<label class="form-field">
+										<span class="checkbox">
+											<input type="checkbox" name="media_training" value="1">
+											<span class="display-box"></span>
+										</span>
+										<span class="text">Relevant media training</span>
+									</label>
+
+									<label class="form-field">
+										<span class="checkbox">
+											<input type="checkbox" name="cooperative" value="1">
+											<span class="display-box"></span>
+										</span>
+										<span class="text">Cooperative with media teams</span>
+									</label>
+
+									<label class="form-field">
+										<span class="checkbox">
+											<input type="checkbox" name="key_influencer" value="1">
+											<span class="display-box"></span>
+										</span>
+										<span class="text">Key influencer</span>
+									</label>
+
+								</form>
+
+							</section>
+
+							<!-- School Choice - Inputs with an alert -->
+							<section class="box">
+
+								<header class="box-header">
+									School Choice
+								</header>
+
+								<form class="box-content form form-horizontal xl-4-and-8 l-4-and-8 ltl-12-and-0">
+
+									<div class="alert alert-success">
+										Tax credit scholarship received
+									</div>
+
+									<h2>Tax Credit Scholarship</h2>
+
+									<label class="form-field">
+										<span class="label">Calculator</span>
+										<span class="status complete">Complete</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Application</span>
+										<span class="status complete">Complete</span>
+									</label>
+
+									<hr>
+
+									<h2>School Voucher</h2>
+
+									<label class="form-field">
+										<span class="label">Calculator</span>
+										<span class="status complete">Complete</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Application</span>
+										<span class="status pending">In Progress</span>
+									</label>
+
+								</form>
+
+							</section>
+
+							<!-- Interests - List of content in tiled groups -->
+							<section class="box">
+
+								<header class="box-header">
+									Interests
+								</header>
+
+								<form class="box-content form form-tile">
+
+									<label class="form-field">
+										<span class="label">Engagement Interests</span>
+										<span class="input placeholder">
+											Contact Elected Officials
+											<br>Write a Letter to the Editor
+										</span>
+									</label>
+
+									<label class="form-field">
+										<span class="label">Issue Interests</span>
+										<span class="input placeholder">
+											Recognizing Great Teaching
+											<br>Quality School Choice Options
+											<br>Strong Accountability
+										</span>
+									</label>
+
+								</form>
+
+							</section>
+
+							<section class="box">
+
+								<div class="box-header">
+									Edit School
+								</div>
+
+								<div class="box-content">
+
+						  			<label class="form-field">
+						  				<span class="label">Name</span>
+						  				<input class="input input-block" id="name" name="name" type="text">
+						  			</label>
+
+						  			<br>
+
+						  			<label class="form-field">
+						  				<span class="label">Type</span>
+						  				<div class="select">
+						  					<select class="input" id="school_type_id" name="school_type_id">
+						  						<option>- Select type -</option>
+						  						<option value="1">Traditional Public</option>
+						  						<option value="2">Private</option>
+						  						<option value="3">Charter</option>
+						  						<option value="4">Magnet</option>
+						  						<option value="5">Virtual</option>
+						  						<option value="6">Career and Technical Education</option>
+						  					</select>
+						  				</div>
+						  			</label>
+
+						  			<br>
+
+									<input class="btn btn-primary btn-block" name="commit" type="submit" value="Create School">
+
+									<br>
+
+									<input class="btn btn-danger btn-block" name="commit" type="submit" value="Delete School">
+
+								</div>
+
+							</section>
+
+							<!-- Notes - Content items with a large textarea at the bottom -->
+							<section class="box">
+
+								<header class="box-header">
+									Notes
+								</header>
+
+								<div class="box-content">
+
+									<div class="box-items">
+
+										<div class="box-item">
+
+											<h3 class="title">
+												<a href="#">Tyler Henke</a>
+												<time datetime="2014-11-20">on 11/20/2014</time>
+											</h3>
+
+											<p>
+												Quas illum officiis similique sed excepturi porro omnis fugiat quibusdam totam vitae eum. Cumque eaque sint eius ratione maiores earum. Quis ipsa voluptatem sunt cupiditate occaecati distinctio. Labore magnam dignissimos laudantium architecto quisquam dolores. Asperiores labore ducimus iusto mollitia. Aut veniam quis quia et error voluptate voluptatem eaque. Quaerat numquam maxime deserunt adipisci. Et facilis saepe est consequatur blanditiis quam et accusantium.
+											</p>
+
+										</div>
+
+										<div class="box-item">
+
+											<h3 class="title">
+												<a href="#">Forrest Fowler</a>
+												<time datetime="2014-11-21">on 11/21/2014</time>
+											</h3>
+
+											<p>
+												Ipsa rem itaque impedit aperiam suscipit assumenda quam nesciunt. Eum delectus libero laboriosam voluptates quas dolorem consequatur beatae. Dolor ex et qui sequi eveniet. In iste aperiam aut velit praesentium. Non dolorum rerum suscipit aut sunt. Nisi repellendus ut repudiandae voluptatem culpa molestiae.
+											</p>
+
+											<div class="attachments">
+												<a href="#" class="attachment attachment-image">Profile_final.png</a>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<form class="form form-alt box-content-form">
+									<textarea class="input textarea textarea-block"></textarea>
+									<button class="btn btn-secondary btn-block">Post Private Note</button>
+								</form>
+
+							</section>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</article>
+
+		</div>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../dist/scripts/index.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+
+				$('[data-nav-drawer]').navDrawer();
+
+				$('[data-nav-slideout]').navSlideout();
+
+				$('.overflow-fade').scrollContent();
+
+				$('[data-search-dropdown]').searchDropdown({
+					search: function() {
+						this.open();
+					}
+				});
+
+				$('[data-toggle-list]').toggleList({
+					onChange: function(val) {
+						console.log('new toggle value: ' + val);
+					}
+				});
+
+				$('[data-custom-select]').customSelect({
+					onChange: function(val) {
+						console.log('new value: ' + val);
+					}
+				});
+
+				// Sample usage of the tableAppend plugin. Should be used when data is returned
+				// from the server via AJAX or something.
+				$('.view-more-example').click(function(e) {
+					e.preventDefault();
+					$(this).parents('table').tableAppend([
+						{
+							name: 'Drew Loomer',
+							source: 'Twitter',
+							activity: 'Died a little inside.',
+							date: '10/30/2014'
+						},
+						{
+							name: 'Woody Hoban',
+							source: 'Myspace',
+							activity: 'Was a dog.',
+							date: '1/23/2015'
+						},
+						{
+							name: 'Drew Loomer',
+							source: 'Twitter',
+							activity: 'Died a little inside.',
+							date: '10/30/2014'
+						},
+						{
+							name: 'Woody Hoban',
+							source: 'Myspace',
+							activity: 'Was a dog.',
+							date: '1/23/2015'
+						},
+						{
+							name: 'Drew Loomer',
+							source: 'Twitter',
+							activity: 'Died a little inside.',
+							date: '10/30/2014'
+						},
+						{
+							name: 'Woody Hoban',
+							source: 'Myspace',
+							activity: 'Was a dog.',
+							date: '1/23/2015'
+						}
+					]);
+				});
+			});
+
+		</script>
+
+	</body>
+
+</html>

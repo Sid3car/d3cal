@@ -1,0 +1,94 @@
+@import "compass/css3/transform";
+
+.nav-drawer {
+	position: relative;
+	z-index: 500;
+
+	.nav-drawer-content {
+		background-color: $nav-drawer-background-color;
+		border-radius: .075em;
+		@extend .shadow.shadow-nav-drawer;
+		display: none;
+		margin-top: .4em;
+		min-width: 12em;
+		position: absolute;
+		width: 110%;
+
+		.btn:last-child {
+			margin: 1em 1em 0 1em;
+			width: calc(100% - 2em);
+		}
+	}
+
+	.nav-drawer-content-padding {
+		padding: .5em 0;
+	}
+
+	ul.nav-drawer-btn-list {
+		li {
+			background-color: $nav-drawer-background-color;
+
+			&:nth-child(even) {
+				background-color: $nav-drawer-alt-background-color;
+			}
+
+			a {
+				color: $nav-drawer-color;
+				font-size: .95em;
+				font-weight: 600;
+				display: block;
+				padding: .8em 1em .8em 2.75em;
+				position: relative;
+
+				.icon {
+					position: absolute;
+					left: 1em;
+					top: 50%;
+					@include translateY(-50%);
+				}
+
+				&:hover {
+					background-color: $nav-drawer-hover-background-color;
+				}
+			}
+		}
+	}
+
+	ul.nav-drawer-list {
+		li {
+			background-color: $nav-drawer-background-color;
+
+			&:nth-child(even) {
+				background-color: $nav-drawer-alt-background-color;
+			}
+
+			a {
+				color: $nav-drawer-alt-color;
+				font-weight: 600;
+				display: block;
+				padding: .5em 1em .5em 1em;
+				position: relative;
+
+				&:hover {
+					background-color: $nav-drawer-hover-background-color;
+				}
+			}
+		}
+	}
+
+	&.nav-drawer-left {
+		margin-right: 1em;
+	}
+
+	&.nav-drawer-right {
+		.nav-drawer-content {
+			right: 0;
+		}
+	}
+
+	&.open {
+		.nav-drawer-content {
+			display: block;
+		}
+	}
+}

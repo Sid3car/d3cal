@@ -1,0 +1,149 @@
+@import "compass/css3/box-sizing";
+@import "compass/css3/transition";
+@import "buttons";
+@import "icons";
+@import "grid";
+@import "score";
+@import "attachments";
+@import "shadowed-image";
+@import "../helpers/center";
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: $body-background-color;
+	color: $body-color;
+	font-family: $font-sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.wrapper {
+	@include box-sizing(border-box);
+	margin: 0 auto;
+	width: 940px;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.align-center,
+.center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.center-x {
+	@include center(x);
+}
+
+.center-y {
+	@include center(y);
+}
+
+.center-x-y {
+	@include center(x-y);
+}
+
+.abs-left {
+	left: 0;
+	position: absolute !important;
+}
+
+.abs-right {
+	position: absolute !important;
+	right: 0;
+}
+
+.circle {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.overflow-fade {
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+
+	&::after {
+		@include background(linear-gradient(90deg, transparentize($content-background-color, 1) 0%, $content-background-color 100%));
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 75px;
+	}
+
+	&:hover {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+a, button {
+	color: $content-color-link;
+	@include transition-duration(500ms);
+	@include transition-property(color);
+	text-decoration: none;
+
+	&:hover {
+		color: $content-color-link-hover;
+	}
+}
+
+strong {
+	font-weight: 600;
+}
+
+@include breakpoint(lt_extra_large) {
+	.wrapper {
+		margin: 0;
+		padding: 0 1em;
+		width: 100%;
+	}
+}
+
+@include breakpoint(lt_large) {
+	.ltl-hide {
+		display: none !important;
+	}
+}
+
+@include breakpoint(lt_medium) {
+	.ltm-hide {
+		display: none !important;
+	}
+}
+
+@include breakpoint(gt_medium) {
+	.gtm-hide {
+		display: none !important;
+	}
+}
+
+@include breakpoint(gt_small) {
+	.gts-hide {
+		display: none !important;
+	}
+}

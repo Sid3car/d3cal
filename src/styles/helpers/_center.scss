@@ -1,0 +1,21 @@
+@import "compass/css3/transform";
+
+@mixin center($type: 'x-y') {
+
+	@if $type == 'y' {
+		position: absolute;
+		top: 50%;
+		@include translate(0, -50%);
+	}
+	@elseif $type == 'x' {
+		left: 50%;
+		position: absolute;
+		@include translate(-50%, 0);
+	}
+	@else {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		@include translate(-50%, -50%);
+	}
+}

@@ -1,0 +1,24 @@
+.toggle-list {
+	padding: .65em 1em;
+
+	.toggle-list-item {
+		color: $toggle-list-color;
+		cursor: pointer;
+		display: inline-block;
+		font-size: .75em;
+		font-weight: 600;
+		line-height: .95em;
+		margin-right: .5em;
+		padding: .5em;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $toggle-list-hover-color;
+		}
+
+		&.active {
+			background-color: $toggle-list-active-background-color;
+			border-radius: .25em;
+		}
+	}
+}

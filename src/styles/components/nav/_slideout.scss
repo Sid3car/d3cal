@@ -1,0 +1,75 @@
+@import "compass/css3/transition";
+
+.nav-slideout {
+
+}
+
+.nav-slideout-content {
+	background-color: $nav-slideout-background-color;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 0;
+
+	ul.nav-slideout-list {
+		li {
+			background-color: $nav-slideout-background-color;
+
+			&:nth-child(even) {
+				background-color: $nav-slideout-alt-background-color;
+			}
+
+			a {
+				color: $nav-slideout-alt-color;
+				font-size: 1.1em;
+				font-weight: 600;
+				display: block;
+				padding: 1em;
+				position: relative;
+
+				&:hover {
+					background-color: $nav-slideout-hover-background-color;
+				}
+			}
+		}
+
+		.btn:last-child {
+			margin: 1em 1em 0 1em;
+			width: calc(100% - 2em);
+		}
+	}
+}
+
+.nav-slideout-search {
+	border-bottom: 1px solid $nav-slideout-alt-background-color;
+
+	.input {
+		width: calc(100% - 49px);
+	}
+
+	.btn {
+		width: 50px;
+	}
+
+	&.search-dropdown .search-dropdown-content {
+		margin-top: 0;
+		width: 100%;
+	}
+}
+
+@include breakpoint(lt_large) {
+	body.slideout {
+		.main-content {
+			left: 80%;
+			opacity: .5;
+			position: fixed;
+		}
+
+		.nav-slideout-content {
+			display: block;
+			width: 80%;
+		}
+	}
+}
