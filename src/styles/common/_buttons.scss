@@ -14,7 +14,7 @@
 
 	&.btn-primary {
 		@extend .shadow.shadow-primary;
-		background: $color-blue-alt-light;
+		background: $primary-button-background;
 		border: 1px solid $primary-button-border;
 		color: $primary-button-color;
 		font-size: .95em;
@@ -22,7 +22,7 @@
 		padding: .65em 3em;
 
 		&:hover {
-			background: $color-blue-alt-dark;
+			background: $primary-button-background-hover;
 		}
 	}
 
