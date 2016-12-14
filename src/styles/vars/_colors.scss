@@ -5,8 +5,8 @@ $color-blue-extra-light: rgba(233, 244, 251, 1);
 $color-blue-base: rgba(44, 151, 222, 1);
 $color-blue-dark: rgba(6, 104, 172, 1);
 $color-blue-extra-dark: rgba(72, 98, 108, 1);
-$color-blue-gradient-light: rgba(36, 149, 219, 1);
-$color-blue-gradient-dark: rgba(34, 144, 215, 1);
+$color-blue-light: rgba(36, 149, 219, 1);
+$color-blue-dark: rgba(34, 144, 215, 1);
 $color-blue-alt-light: rgba(38, 149, 223, 1);
 $color-blue-alt-dark: rgba(31, 135, 206, 1);
 
@@ -43,8 +43,8 @@ $body-background-color: $color-gray-base;
 $body-color: $color-black-base;
 
 // Header
-$header-background-gradient-top: $color-blue-alt-light;
-$header-background-gradient-bottom: $color-blue-gradient-dark;
+$header-background: $color-blue-light;
+$header-background: $color-blue-dark;
 $header-color: $color-white-base;
 $header-secondary-background-color: $color-white-base;
 
