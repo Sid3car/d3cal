@@ -43,7 +43,7 @@ $body-background-color: $color-gray-base;
 $body-color: $color-black-base;
 
 // Header
-$header-background-gradient-top: $color-red-light;
+$header-background-gradient-top: $color-blue-alt-light;
 $header-background-gradient-bottom: $color-blue-gradient-dark;
 $header-color: $color-white-base;
 $header-secondary-background-color: $color-white-base;
@@ -51,8 +51,8 @@ $header-secondary-background-color: $color-white-base;
 // Buttons
 $primary-button-border: $color-blue-dark;
 $primary-button-color: $color-white-base;
-$primary-button-background: $$color-blue-alt-light;
-$primary-button-background-hover: $$color-blue-alt-dark;
+$primary-button-background: $color-blue-alt-light;
+$primary-button-background-hover: $color-blue-alt-dark;
 $secondary-button-border: $color-gray-darkest;
 $secondary-button-color: $color-black-base;
 $secondary-button-background: $color-white-base;
