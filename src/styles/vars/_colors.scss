@@ -7,8 +7,8 @@ $color-blue-dark: rgba(6, 104, 172, 1);
 $color-blue-extra-dark: rgba(72, 98, 108, 1);
 $color-blue-gradient-light: rgba(36, 149, 219, 1);
 $color-blue-gradient-dark: rgba(34, 144, 215, 1);
-$color-blue-gradient-alt-light: rgba(38, 149, 223, 1);
-$color-blue-gradient-alt-dark: rgba(31, 135, 206, 1);
+$color-blue-alt-light: rgba(38, 149, 223, 1);
+$color-blue-alt-dark: rgba(31, 135, 206, 1);
 
 $color-white-base: rgba(255, 255, 255, 1);
 
@@ -49,29 +49,24 @@ $header-color: $color-white-base;
 $header-secondary-background-color: $color-white-base;
 
 // Buttons
-$primary-button-background-gradient-top: $color-blue-gradient-alt-light;
-$primary-button-background-gradient-bottom: $color-blue-gradient-alt-dark;
 $primary-button-border: $color-blue-dark;
 $primary-button-color: $color-white-base;
-$secondary-button-background-gradient-top: $color-white-base;
-$secondary-button-background-gradient-bottom: $color-gray-light;
 $secondary-button-border: $color-gray-darkest;
 $secondary-button-color: $color-black-base;
 $secondary-button-hover-background-color: $color-white-base;
 $alt-button-color: $color-blue-base;
 $alt-button-color-hover: $color-blue-dark;
-$facebook-button-background-gradient-top: rgba(87, 119, 204, 1);
-$facebook-button-background-gradient-bottom: rgba(61, 81, 162, 1);
+$facebook-button-background: rgba(87, 119, 204, 1);
+$facebook-button-background-hover: rgba(61, 81, 162, 1);
 $facebook-button-border: rgba(52, 79, 148, 1);
-$google-plus-button-background-gradient-top: rgba(253, 110, 85, 1);
-$google-plus-button-background-gradient-bottom: rgba(216, 71, 46, 1);
+$google-plus-button-background: rgba(253, 110, 85, 1);
+$google-plus-button-background-hover: rgba(216, 71, 46, 1);
 $google-plus-button-border: rgba(212, 68, 43, 1);
-$twitter-button-background-gradient-top: rgba(119, 194, 252, 1);
-$twitter-button-background-gradient-bottom: rgba(76, 164, 233, 1);
+$twitter-button-background: rgba(119, 194, 252, 1);
+$twitter-button-background-hover: rgba(76, 164, 233, 1);
 $twitter-button-border: rgba(74, 163, 232, 1);
 $danger-button-background: $color-red-base;
-$danger-button-background-gradient-top: $color-red-light;
-$danger-button-background-gradient-bottom: $color-red-base;
+$danger-button-background-hover: $color-red-light; 
 $danger-button-border: $color-red-dark;
 $danger-button-color: $color-white-base;
 

@@ -14,8 +14,7 @@
 
 	&.btn-primary {
 		@extend .shadow.shadow-primary;
-		background: $primary-button-background-gradient-top;
-		@include background(linear-gradient($primary-button-background-gradient-top, $primary-button-background-gradient-bottom));
+		background: $color-blue-alt-light;
 		border: 1px solid $primary-button-border;
 		color: $primary-button-color;
 		font-size: .95em;
@@ -23,14 +22,13 @@
 		padding: .65em 3em;
 
 		&:hover {
-			background: $primary-button-background-gradient-top;
+			background: $color-blue-alt-dark;
 		}
 	}
 
 	&.btn-secondary {
 		@extend .shadow.shadow-secondary;
-		background: $secondary-button-background-gradient-top;
-		@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+		background: $color-white-base;
 		border: 1px solid $secondary-button-border;
 		color: $secondary-button-color;
 		font-size: .85em;
@@ -38,14 +36,13 @@
 		padding: .4em 2em;
 
 		&:hover {
-			background: $secondary-button-background-gradient-top;
+			background: $color-white-base;
 		}
 	}
 
 	&.btn-danger{
 		@extend .shadow.shadow-secondary;
 		background: $danger-button-background;
-		@include background(linear-gradient($danger-button-background-gradient-top, $danger-button-background-gradient-bottom));
 		border: 1px solid $danger-button-border;
 		color: $danger-button-color;
 		font-size: .85em;
@@ -53,7 +50,7 @@
 		padding: .4em 2em;
 
 		&:hover {
-			background: $danger-button-background-gradient-top;
+			background: $danger-button-background-hover;
 		}
 	}
 
@@ -101,32 +98,29 @@
 	}
 
 	&.btn-facebook {
-		background: $facebook-button-background-gradient-top;
-		@include background(linear-gradient($facebook-button-background-gradient-top, $facebook-button-background-gradient-bottom));
+		background: $facebook-button-background;
 		border: 1px solid $facebook-button-border;
 
 		&:hover {
-			background: $facebook-button-background-gradient-top;
+			background: $facebook-button-background-hover;
 		}
 	}
 
 	&.btn-google-plus {
-		background: $google-plus-button-background-gradient-top;
-		@include background(linear-gradient($google-plus-button-background-gradient-top, $google-plus-button-background-gradient-bottom));
+		background: $google-plus-button-background;
 		border: 1px solid $google-plus-button-border;
 
 		&:hover {
-			background: $google-plus-button-background-gradient-top;
+			background: $google-plus-button-background-hover;
 		}
 	}
 
 	&.btn-twitter {
-		background: $twitter-button-background-gradient-top;
-		@include background(linear-gradient($twitter-button-background-gradient-top, $twitter-button-background-gradient-bottom));
+		background: $twitter-button-background;
 		border: 1px solid $twitter-button-border;
 
 		&:hover {
-			background: $twitter-button-background-gradient-top;
+			background: $twitter-button-background-hover;
 		}
 	}
 
