@@ -53,7 +53,8 @@ $primary-button-border: $color-blue-dark;
 $primary-button-color: $color-white-base;
 $secondary-button-border: $color-gray-darkest;
 $secondary-button-color: $color-black-base;
-$secondary-button-hover-background-color: $color-white-base;
+$secondary-button-background: $color-white-base;
+$secondary-button-background-hover: $color-white-base;
 $alt-button-color: $color-blue-base;
 $alt-button-color-hover: $color-blue-dark;
 $facebook-button-background: rgba(87, 119, 204, 1);
@@ -66,7 +67,7 @@ $twitter-button-background: rgba(119, 194, 252, 1);
 $twitter-button-background-hover: rgba(76, 164, 233, 1);
 $twitter-button-border: rgba(74, 163, 232, 1);
 $danger-button-background: $color-red-base;
-$danger-button-background-hover: $color-red-light; 
+$danger-button-background-hover: $color-red-light;
 $danger-button-border: $color-red-dark;
 $danger-button-color: $color-white-base;
 

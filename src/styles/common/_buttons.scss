@@ -28,7 +28,7 @@
 
 	&.btn-secondary {
 		@extend .shadow.shadow-secondary;
-		background: $color-white-base;
+		background: $secondary-button-background;
 		border: 1px solid $secondary-button-border;
 		color: $secondary-button-color;
 		font-size: .85em;
@@ -36,7 +36,7 @@
 		padding: .4em 2em;
 
 		&:hover {
-			background: $color-white-base;
+			background: $secondary-button-background-hover;
 		}
 	}
 
