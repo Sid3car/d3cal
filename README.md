@@ -26,7 +26,7 @@ sudo gem install compass
 
 
 
-  ## What You'll Get
+## What You'll Get
   ---
 * Master search mechanics   
 
