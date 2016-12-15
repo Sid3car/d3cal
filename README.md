@@ -1,7 +1,9 @@
 
 
 # [Decal](http://yellowdoes.com/working/iqe/docs/ "Decal Homepage")
+### Enterprise CSS Framework for Business Critical Applications
 ---
+
 Built by
 [<img src="https://raw.githubusercontent.com/Sid3car/decal/master/src/images/sid3car.png " alt="Sid2car" width="80">](http://yellowdoes.com/working/iqe/docs/)
 
