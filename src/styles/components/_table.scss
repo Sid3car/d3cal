@@ -22,7 +22,7 @@
 				background-color: $content-table-alt-background-color;
 
 				.overflow-fade::after {
-					@include background(linear-gradient(90deg, transparentize($content-table-alt-background-color, 1) 0%, $content-table-alt-background-color 100%));
+					background: $content-table-alt-background-color;
 				}
 			}
 		}
