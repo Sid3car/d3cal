@@ -54,5 +54,9 @@ sudo gem install compass
 
 ## Contribution
 
-* Link to page with contribution guidelines
-*
+* We :heart: contributers
+* Fork it!
+* Fix it!
+* Submit a pull request!
+* Something not working?
+* Submit issue to decal@sid3car.com 
