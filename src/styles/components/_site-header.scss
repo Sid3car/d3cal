@@ -3,8 +3,7 @@
 
 header.site-header {
 	.primary {
-		background-color: $header-background-gradient-top;
-		@include background-image(linear-gradient($header-background-gradient-top, $header-background-gradient-bottom));
+		background-color: $header-background;
 		@include pie-clearfix();
 		color: $header-color;
 		padding: .6em 0;

@@ -2,8 +2,7 @@
 
 .custom-select {
 	@extend .shadow.shadow-secondary;
-	background: $secondary-button-background-gradient-top;
-	@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+	background: $secondary-button-background;
 	border: 1px solid $secondary-button-border;
 	display: inline-block;
 	color: $content-color-alt;
@@ -44,11 +43,11 @@
 		overflow: visible;
 
 		.active {
-			background-color: $secondary-button-background-gradient-top;
+			background-color: $secondary-button-background;
 		}
 
 		ul {
-			@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+			background: $secondary-button-background;
 			border: 1px solid $secondary-button-border;
 			border-top: 0;
 			margin: 0 -1px;
@@ -62,7 +61,7 @@
 
 				&:hover,
 				&.active {
-					background-color: $secondary-button-hover-background-color;
+					background-color: $secondary-button-background-hover;
 				}
 			}
 		}

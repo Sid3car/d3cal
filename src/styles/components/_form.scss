@@ -139,8 +139,7 @@
 }
 
 .select {
-	background: $secondary-button-background-gradient-top;
-	@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+	background: $secondary-button-background;
 	position: relative;
 
 	&.bold {
@@ -197,7 +196,7 @@
 	position: relative;
 
 	.display-box {
-		@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
+		background: $secondary-button-background;
 		border: 1px solid $secondary-button-border;
 		cursor: pointer;
 		display: block;
