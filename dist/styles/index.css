@@ -2895,20 +2895,16 @@ header .tabs a {
 }
 
 .footer-attribution {
-  margin-left: 0;
+  margin: 10px;
   font-size: 1.2em;
 }
 .footer-attribution p {
   display: inline-block;
-  background-color: #ef5b22;
-  color: white;
-  height: 70px;
   padding: 10px;
   padding-left: 20px;
 }
-.footer-attribution .footer-logo {
-  width: 100px;
-  margin-bottom: -15px;
+.footer-attribution p a {
+  color: #ef5b22;
 }
 
 article.dashboard > .wrapper {

@@ -1,16 +1,12 @@
 .footer-attribution {
-    margin-left:0;
+    margin:10px;
     font-size:1.2em;
     p {
       display:inline-block;
-      background-color:$sid3car-orange;
-      color: $content-color-inverted;
-      height:70px;
       padding: 10px;
       padding-left:20px;
+      a {
+        color:$sid3car-orange;
+      }
     }
-  .footer-logo {
-    width:100px;
-    margin-bottom:-15px;
-  }
 }
