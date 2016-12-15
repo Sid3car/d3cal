@@ -1,7 +1,6 @@
 
 
 # [Decal](http://yellowdoes.com/working/iqe/docs/ "Decal Homepage")
-### Enterprise CSS Framework for Business Critical Applications
 ---
 
 Built by
