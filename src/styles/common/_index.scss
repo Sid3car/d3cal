@@ -84,7 +84,6 @@ body {
 	white-space: nowrap;
 
 	&::after {
-		@include background(linear-gradient(90deg, transparentize($content-background-color, 1) 0%, $content-background-color 100%));
 		content: '';
 		display: block;
 		height: 100%;
