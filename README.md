@@ -1,6 +1,6 @@
 
 
-# [Decal](http://yellowdoes.com/working/iqe/docs/ "Decal Homepage")
+# [d3cal](http://yellowdoes.com/working/iqe/docs/ "Decal Homepage")
 ---
 
 Built by
