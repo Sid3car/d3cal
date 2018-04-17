@@ -66,4 +66,4 @@ sudo gem install compass
 * Fix it!
 * Submit a pull request!
 * Something not working?
-* Submit issue to decal@sid3car.com
+* Submit issue to forrest@sid3car.com
