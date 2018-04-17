@@ -23,8 +23,11 @@ if compass fails
 sudo gem install compass
 ```
 
-
-
+Then fire up a web server...
+```
+npm install -g http-server
+http-server
+```
 
 
 ## What You'll Get
