@@ -140,7 +140,6 @@
 
 .select {
 	background: $secondary-button-background-gradient-top;
-	@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
 	position: relative;
 
 	&.bold {

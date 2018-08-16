@@ -13,9 +13,7 @@
 	}
 
 	&.btn-primary {
-		@extend .shadow.shadow-primary;
 		background: $primary-button-background-gradient-top;
-		@include background(linear-gradient($primary-button-background-gradient-top, $primary-button-background-gradient-bottom));
 		border: 1px solid $primary-button-border;
 		color: $primary-button-color;
 		font-size: .95em;
@@ -28,9 +26,7 @@
 	}
 
 	&.btn-secondary {
-		@extend .shadow.shadow-secondary;
 		background: $secondary-button-background-gradient-top;
-		@include background(linear-gradient($secondary-button-background-gradient-top, $secondary-button-background-gradient-bottom));
 		border: 1px solid $secondary-button-border;
 		color: $secondary-button-color;
 		font-size: .85em;
@@ -43,9 +39,7 @@
 	}
 
 	&.btn-danger{
-		@extend .shadow.shadow-secondary;
 		background: $danger-button-background;
-		@include background(linear-gradient($danger-button-background-gradient-top, $danger-button-background-gradient-bottom));
 		border: 1px solid $danger-button-border;
 		color: $danger-button-color;
 		font-size: .85em;
